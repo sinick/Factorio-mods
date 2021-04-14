@@ -1,13 +1,15 @@
 local more_module_slots_defines = require('defines')
-local more_module_slots_data = require('data-updates')
 
 local function set_stack(e)
     local player = game.players[e.player_index]
     if not player.get_main_inventory() then return end
     local itemproto = game.item_prototypes
-    for m in more_module_slots_data.module_list do
-        if itemproto[m] then
-            player.insert{ name = m, count = itemproto[m].stack_size * 5 }
+    for name,prototype in pairs(itemproto) do
+        if (name ~= nil and name ~= '') then
+            if string.find(name, "module%-0") then
+                player.print("Try to add " .. itemproto[name].stack_size * 5 .. " of ".. name .. ".")
+                player.insert{ name = name, count = itemproto[name].stack_size * 5 }
+            end
         end
     end
 end
