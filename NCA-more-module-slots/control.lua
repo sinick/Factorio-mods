@@ -1,3 +1,4 @@
+local more_module_slots_defines = require('defines')
 
 local function set_stack(e)
     local player = game.players[e.player_index]
