@@ -12,9 +12,6 @@ local function set_stack(e)
                 count = itemproto[v.name].stack_size * 5
             end
             player.insert{ name = v.name, count = count }
-        else 
-            log("Modules 0 are missing")
-            exit 1
         end
     end
 end
