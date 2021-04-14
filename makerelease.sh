@@ -12,7 +12,7 @@ generate_archive()
         do if [ -f $f ]; then rm "$f"; fi
         done
 
-        git archive --prefix "$1/${modname}_$modver/" -o "${modname}_$modver.zip" HEAD
+        git archive --prefix "${modname}_$modver/" -o "${modname}_$modver.zip" HEAD:$1
     fi
 }
 
