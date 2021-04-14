@@ -1,0 +1,8 @@
+{
+	"name": "NCA-Advanced-Drills",
+	"version": "1.0.2",
+	"title": "Advanced Drills",
+	"author": "NCA",
+	"description": "Adds higher tier electric drills, which allow for faster mining without hundreds of miners(Copy of Neomore with speed tweak).",
+	"factorio_version": "1.1"
+}

@@ -1,0 +1,11 @@
+{
+    "name": "NCA-Electric_pole_distance",
+    "version": "1.0.0",
+    "title": "Electric pole distance",
+    "author": "NCA",
+    "contact": "",
+    "homepage": "",
+    "factorio_version": "1.1",
+    "dependencies": ["base >= 0.17"],
+    "description": "Allow to increase via configuration electric pole distance for area and wire."
+}

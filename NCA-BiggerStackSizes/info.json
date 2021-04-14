@@ -1,0 +1,9 @@
+{
+	"name": "NCA-BiggerStackSizes",
+	"version": "1.0.1",
+	"title": "Bigger Stack Sizes",
+	"author": "NCA",
+	"description": "Makes item stack sizes bigger (Modify from Bodleum).",
+	"factorio_version":"1.1",
+	"dependencies": ["base >= 0.14.0"]
+}
