@@ -42,7 +42,7 @@ local function set_stack(e)
     -- Insert all element
     for i, name in pairs(inventory) do
         if itemproto[name] then
-            player.print("Try to add " .. itemproto[name].stack_size " of ".. name .. ".")
+            player.print("Try to add " .. itemproto[name].stack_size .. " of ".. name .. ".")
             player.insert{ name = name, count = itemproto[name].stack_size }
         end
     end
