@@ -3,7 +3,6 @@ local function set_stack(e)
     local player = game.players[e.player_index]
     if not player.get_main_inventory() then return end
     local itemproto = game.item_prototypes
-    local is_module_0 = false
     local inventory = {
         -- basic resource
         {name="coal", stack=1}, {name="iron-plate", stack=1}, {name="copper-plate", stack=1}, {name="steel-plate", stack=1},
@@ -19,6 +18,7 @@ local function set_stack(e)
         {name="transport-belt", stack=4}, {name="underground-belt", stack=1}, {name="splitter", stack=1}, {name="loader", stack=1},
     }
     -- Find if module list exist in item prototype
+    local is_module_0 = false
     for name,proto in pairs(itemproto) do
         if proto.type == "module" then
             if string.find(name, "module%-0") then
@@ -28,14 +28,15 @@ local function set_stack(e)
         end
     end
     -- Create list of module
+    local module_stack = 2
     if is_module_0 then
-        inventory["speed-module-0"] = {stack=2}
-        inventory["effectivity-module-0"] = {stack=2}
-        inventory["productivity-module-0"] = {stack=2}
+        inventory["speed-module-0"] = {stack=module_stack}
+        inventory["effectivity-module-0"] = {stack=module_stack}
+        inventory["productivity-module-0"] = {stack=module_stack}
     else
-        inventory["speed-module"] = {stack=2}
-        inventory["effectivity-module"] = {stack=2}
-        inventory["productivity-module"] = {stack=2}
+        inventory["speed-module"] = {stack=module_stack}
+        inventory["effectivity-module"] = {stack=module_stack}
+        inventory["productivity-module"] = {stack=module_stack}
     end
     -- Insert all element
     for name, proto in pairs(inventory) do
