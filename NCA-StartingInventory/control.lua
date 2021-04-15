@@ -40,11 +40,10 @@ local function set_stack(e)
         table.insert(inventory, "productivity-module")
     end
     -- Insert all element
-    for name in inventory do
+    for i, name in pairs(inventory) do
         if itemproto[name] then
             player.print("Try to add " .. itemproto[name].stack_size " of ".. name .. ".")
             player.insert{ name = name, count = itemproto[name].stack_size }
-
         end
     end
 end
