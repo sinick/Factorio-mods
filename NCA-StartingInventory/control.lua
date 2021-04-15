@@ -6,21 +6,21 @@ local function set_stack(e)
     local is_module_0 = false
     local inventory = {
         -- basic resource
-        "coal", "iron-plate", "copper-plate", "steel-plate",
+        {name="coal", stack=1}, {name="iron-plate", stack=1}, {name="copper-plate", stack=1}, {name="steel-plate", stack=1},
         -- Power
-        "burner-inserter", "steam-engine", "boiler", "small-electric-pole",
+        {name="burner-inserter", stack=1}, {name="steam-engine", stack=1}, {name="boiler", stack=1}, {name="small-electric-pole", stack=2},
         -- Other
-        "wooden-chest", "small-lamp",        
+        {name="wooden-chest", stack=1}, {name="small-lamp", stack=2},        
         -- Fluid
-        "pipe", "pipe-to-ground", "offshore-pump" , "pump", "storage-tank",
+        {name="pipe", stack=1}, {name="pipe-to-ground", stack=1}, {name="offshore-pump", stack=1}, {name="pump", stack=1}, {name="storage-tank", stack=1},
         -- Machine
-        "electric-mining-drill", "electric-furnace", "assembling-machine-1", "lab",
+        {name="electric-mining-drill", stack=2}, {name="electric-furnace", stack=4}, {name="assembling-machine-1", stack=2}, {name="lab", stack=1},
         -- Logistic
-        "transport-belt", "underground-belt", "splitter", "loader",
+        {name="transport-belt", stack=4}, {name="underground-belt", stack=1}, {name="splitter", stack=1}, {name="loader", stack=1},
     }
     -- Find if module list exist in item prototype
-    for name,prototype in pairs(itemproto) do
-        if prototype.type == "module" then
+    for name,proto in pairs(itemproto) do
+        if proto.type == "module" then
             if string.find(name, "module%-0") then
                 is_module_0 = true
                 break
@@ -29,21 +29,19 @@ local function set_stack(e)
     end
     -- Create list of module
     if is_module_0 then
-        for name,prototype in pairs(itemproto) do
-            if string.find(name, "module%-0") then
-                table.insert(inventory, name)
-            end
-        end
+        inventory["speed-module-0"] = {stack=2}
+        inventory["effectivity-module-0"] = {stack=2}
+        inventory["productivity-module-0"] = {stack=2}
     else
-        table.insert(inventory, "speed-module")
-        table.insert(inventory, "effectivity-module")
-        table.insert(inventory, "productivity-module")
+        inventory["speed-module"] = {stack=2}
+        inventory["effectivity-module"] = {stack=2}
+        inventory["productivity-module"] = {stack=2}
     end
     -- Insert all element
-    for i, name in pairs(inventory) do
+    for name, proto in pairs(inventory) do
         if itemproto[name] then
-            player.print("Try to add " .. itemproto[name].stack_size .. " of ".. name .. ".")
-            player.insert{ name = name, count = itemproto[name].stack_size }
+            player.print("Add " .. itemproto[name].stack_size * proto.stack .. " of ".. name .. ".")
+            player.insert{ name = name, count = itemproto[name].stack_size * proto.stack }
         end
     end
 end
