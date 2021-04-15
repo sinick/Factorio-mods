@@ -3,20 +3,43 @@ local function set_stack(e)
     local player = game.players[e.player_index]
     if not player.get_main_inventory() then return end
     local itemproto = game.item_prototypes
-    local inventory = {
-        -- basic resource
-        {name="coal", stack=1}, {name="iron-plate", stack=1}, {name="copper-plate", stack=1}, {name="steel-plate", stack=1},
-        -- Power
-        {name="burner-inserter", stack=1}, {name="steam-engine", stack=1}, {name="boiler", stack=1}, {name="small-electric-pole", stack=2},
-        -- Other
-        {name="wooden-chest", stack=1}, {name="small-lamp", stack=2},        
-        -- Fluid
-        {name="pipe", stack=1}, {name="pipe-to-ground", stack=1}, {name="offshore-pump", stack=1}, {name="pump", stack=1}, {name="storage-tank", stack=1},
-        -- Machine
-        {name="electric-mining-drill", stack=2}, {name="electric-furnace", stack=4}, {name="assembling-machine-1", stack=2}, {name="lab", stack=1},
-        -- Logistic
-        {name="transport-belt", stack=4}, {name="underground-belt", stack=1}, {name="splitter", stack=1}, {name="loader", stack=1},
-    }
+    local inventory = {}
+
+    -- basic resource
+    inventory["coal"]={stack=1},
+    inventory["iron-plate"]={stack=1},
+    inventory["copper-plate"]={stack=1},
+    inventory["steel-plate"]={stack=1},
+    
+    -- Power
+    inventory["burner-inserter"]={stack=1},
+    inventory["steam-engine"]={stack=1},
+    inventory["boiler"]={stack=1},
+    inventory["small-electric-pole"]={stack=2},
+    
+    -- Other
+    inventory["wooden-chest"]={stack=1},
+    inventory["small-lamp"]={stack=2},
+            
+    -- Fluid
+    inventory["pipe"]={stack=1},
+    inventory["pipe-to-ground"]={stack=1},
+    inventory["offshore-pump"]={stack=1},
+    inventory["pump"]={stack=1},
+    inventory["storage-tank"]={stack=1},
+    
+    -- Machine
+    inventory["electric-mining-drill"]={stack=2},
+    inventory["electric-furnace"]={stack=4},
+    inventory["assembling-machine-1"]={stack=2},
+    inventory["lab"]={stack=1},
+    
+    -- Logistic
+    inventory["transport-belt"]={stack=4},
+    inventory["underground-belt"]={stack=1},
+    inventory["splitter"]={stack=1},
+    inventory["loader"]={stack=1},
+		
     -- Find if module list exist in item prototype
     local is_module_0 = false
     for name,proto in pairs(itemproto) do
