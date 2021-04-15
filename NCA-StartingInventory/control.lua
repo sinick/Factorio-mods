@@ -10,6 +10,7 @@ local function set_stack(e)
     inventory["iron-plate"]={stack=1}
     inventory["copper-plate"]={stack=1}
     inventory["steel-plate"]={stack=1}
+    inventory["stone-brick"]={stack=1}
     
     -- Power
     inventory["burner-inserter"]={stack=1}
@@ -39,6 +40,11 @@ local function set_stack(e)
     inventory["underground-belt"]={stack=1}
     inventory["splitter"]={stack=1}
     inventory["loader"]={stack=1}
+
+    -- ammo and explosive
+    inventory["firearm-magazine"]={stack=2}
+    inventory["cliff-explosives"]={stack=2}
+
 		
     -- Find if module list exist in item prototype
     local is_module_0 = false
