@@ -1,0 +1,10 @@
+{
+  "name": "NCA-StartingInventory",
+  "version": "1.1.0",
+  "title": "NCA Starting Inventory",
+  "author": "NCA",
+  "email": "",
+  "contact": "",
+  "description": "Starting inventory with 1 stack of basic (Based on ShallStartInventoy).",
+  "factorio_version": "1.1"
+}
