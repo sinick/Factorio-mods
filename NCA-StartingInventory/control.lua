@@ -27,6 +27,7 @@ local function set_stack(e)
     inventory["pipe-to-ground"]={stack=1}
     inventory["offshore-pump"]={stack=1}
     inventory["pump"]={stack=1}
+    inventory["pump-inland"]={stack=1} -- case inland pump
     inventory["storage-tank"]={stack=1}
     
     -- Machine
