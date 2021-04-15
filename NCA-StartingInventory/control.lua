@@ -6,39 +6,39 @@ local function set_stack(e)
     local inventory = {}
 
     -- basic resource
-    inventory["coal"]={stack=1},
-    inventory["iron-plate"]={stack=1},
-    inventory["copper-plate"]={stack=1},
-    inventory["steel-plate"]={stack=1},
+    inventory["coal"]={stack=1}
+    inventory["iron-plate"]={stack=1}
+    inventory["copper-plate"]={stack=1}
+    inventory["steel-plate"]={stack=1}
     
     -- Power
-    inventory["burner-inserter"]={stack=1},
-    inventory["steam-engine"]={stack=1},
-    inventory["boiler"]={stack=1},
-    inventory["small-electric-pole"]={stack=2},
+    inventory["burner-inserter"]={stack=1}
+    inventory["steam-engine"]={stack=1}
+    inventory["boiler"]={stack=1}
+    inventory["small-electric-pole"]={stack=2}
     
     -- Other
-    inventory["wooden-chest"]={stack=1},
-    inventory["small-lamp"]={stack=2},
+    inventory["wooden-chest"]={stack=1}
+    inventory["small-lamp"]={stack=2}
             
     -- Fluid
-    inventory["pipe"]={stack=1},
-    inventory["pipe-to-ground"]={stack=1},
-    inventory["offshore-pump"]={stack=1},
-    inventory["pump"]={stack=1},
-    inventory["storage-tank"]={stack=1},
+    inventory["pipe"]={stack=1}
+    inventory["pipe-to-ground"]={stack=1}
+    inventory["offshore-pump"]={stack=1}
+    inventory["pump"]={stack=1}
+    inventory["storage-tank"]={stack=1}
     
     -- Machine
-    inventory["electric-mining-drill"]={stack=2},
-    inventory["electric-furnace"]={stack=4},
-    inventory["assembling-machine-1"]={stack=2},
-    inventory["lab"]={stack=1},
+    inventory["electric-mining-drill"]={stack=2}
+    inventory["electric-furnace"]={stack=4}
+    inventory["assembling-machine-1"]={stack=2}
+    inventory["lab"]={stack=1}
     
     -- Logistic
-    inventory["transport-belt"]={stack=4},
-    inventory["underground-belt"]={stack=1},
-    inventory["splitter"]={stack=1},
-    inventory["loader"]={stack=1},
+    inventory["transport-belt"]={stack=4}
+    inventory["underground-belt"]={stack=1}
+    inventory["splitter"]={stack=1}
+    inventory["loader"]={stack=1}
 		
     -- Find if module list exist in item prototype
     local is_module_0 = false
