@@ -40,6 +40,7 @@ local function set_stack(e)
     inventory["underground-belt"]={stack=1}
     inventory["splitter"]={stack=1}
     inventory["loader"]={stack=1}
+    inventory["inserter"]={stack=4}
 
     -- ammo and explosive
     inventory["firearm-magazine"]={stack=2}
