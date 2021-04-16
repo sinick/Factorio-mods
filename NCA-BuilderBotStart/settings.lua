@@ -14,7 +14,6 @@ data:extend({
         setting_type = "runtime-global",
         default_value = 0,
         minimum_value = 0,
-        maximum_value = 7,
         order = "02"
     }
 })

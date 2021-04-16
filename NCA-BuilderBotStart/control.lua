@@ -27,10 +27,15 @@ local ArmorModules = {
 
 --Freeplay
 script.on_init(function(event)
-	if not(settings.global["faster robots"].value == 0) then
+	local speed = settings.global["faster robots"].value
+	if not(speed == 0) then
 		for k,v in pairs(game.forces) do
-			for z = 1, settings.global["faster robots"].value, 1 do
-				v.technologies["worker-robots-speed-" .. tostring(z)].researched = true
+			for z = 1, speed, 1 do
+				if z < 6 then
+					v.technologies["worker-robots-speed-" .. tostring(z)].researched = true
+				else
+					v.technologies["worker-robots-speed-6"].level = v.technologies["worker-robots-speed-6"].level + 1
+				end
 			end
 		end
 	end
