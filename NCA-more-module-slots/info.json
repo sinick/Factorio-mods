@@ -1,21 +1,10 @@
 {
   "name": "NCA-more-module-slots",
   "version": "1.0.0",
-  "date": "2019-03-19",
   "title": "NCA More Module Slots",
-  "author": "EnigmaticAussie, Honktown",
-  "dependencies": [
-    "base",
-    "?angelssmelting",
-    "?angelspetrochem",
-    "?angelsrefining",
-    "?bobassembly",
-    "?bobgreenhouse",
-    "?bobmining",
-    "?burner-fuel-bonus",
-    "?module-requestor",
-    "?ultimatebelts"
-  ],
-  "description": "Add more module slots to anything that can currently accept them, and sometimes, some that dont (Modify from EnigmaticAussie).",
-  "factorio_version": "1.1"
+  "author": "NCA",
+  "contact": "",
+  "homepage": "",
+  "factorio_version": "1.1",
+  "description": "Add more module slots to anything that can currently accept them, and sometimes, some that dont (Modify from EnigmaticAussie)."
 }
