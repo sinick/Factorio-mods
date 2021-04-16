@@ -13,13 +13,9 @@ local function set_stack(e)
     inventory["stone-brick"]={stack=1}
     
     -- Power
-    -- inventory["burner-inserter"]={stack=1}
-    -- inventory["steam-engine"]={stack=1}
-    -- inventory["boiler"]={stack=1}
-    -- inventory["small-electric-pole"]={stack=2}
     inventory["medium-electric-pole"]={stack=2}
-    inventory["solar-panel"]={stack=2}
-    inventory["accumulator"]={stack=2}
+    inventory["solar-panel"]={stack=4}
+    inventory["accumulator"]={stack=3}
     
     -- Other
     inventory["steel-chest"]={stack=1}
@@ -28,9 +24,12 @@ local function set_stack(e)
     -- Fluid
     inventory["pipe"]={stack=1}
     inventory["pipe-to-ground"]={stack=1}
-    inventory["offshore-pump"]={stack=1}
+    if game.active_mods["inland_pumps"] then
+        inventory["offshore-pump-inland"]={stack=1}
+    else
+        inventory["offshore-pump"]={stack=1}
+    end
     inventory["pump"]={stack=1}
-    inventory["pump-inland"]={stack=1} -- case inland pump
     inventory["storage-tank"]={stack=1}
     
     -- Machine
