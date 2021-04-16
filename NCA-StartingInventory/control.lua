@@ -19,7 +19,7 @@ local function set_stack(e)
     -- inventory["small-electric-pole"]={stack=2}
     inventory["medium-electric-pole"]={stack=2}
     inventory["solar-panel"]={stack=2}
-    inventory["solar-accumulator"]={stack=2}
+    inventory["accumulator"]={stack=2}
     
     -- Other
     inventory["steel-chest"]={stack=1}
