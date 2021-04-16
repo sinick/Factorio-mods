@@ -13,13 +13,16 @@ local function set_stack(e)
     inventory["stone-brick"]={stack=1}
     
     -- Power
-    inventory["burner-inserter"]={stack=1}
-    inventory["steam-engine"]={stack=1}
-    inventory["boiler"]={stack=1}
-    inventory["small-electric-pole"]={stack=2}
+    -- inventory["burner-inserter"]={stack=1}
+    -- inventory["steam-engine"]={stack=1}
+    -- inventory["boiler"]={stack=1}
+    -- inventory["small-electric-pole"]={stack=2}
+    inventory["medium-electric-pole"]={stack=2}
+    inventory["solar-panel"]={stack=2}
+    inventory["solar-accumulator"]={stack=2}
     
     -- Other
-    inventory["wooden-chest"]={stack=1}
+    inventory["steel-chest"]={stack=1}
     inventory["small-lamp"]={stack=2}
             
     -- Fluid
@@ -43,6 +46,16 @@ local function set_stack(e)
     inventory["loader"]={stack=1}
     inventory["inserter"]={stack=4}
 
+    -- Train
+    inventory["locomotive"]={stack=1}
+    inventory["cargo-wagon"]={stack=2}
+    inventory["fluid-wagon"]={stack=2}
+    inventory["rail"]={stack=4}
+    inventory["train-stop"]={stack=2}
+    inventory["rail-signal"]={stack=2}
+    inventory["rail-chain-signal"]={stack=2}    
+    
+    
     -- ammo and explosive
     inventory["firearm-magazine"]={stack=2}
     inventory["cliff-explosives"]={stack=2}
