@@ -13,7 +13,7 @@ local ItemPrototypes = {
 	Immunity = "belt-immunity-equipment", --1x1
 }
 
-local Items = {{ItemPrototypes["Robot"], settings.global["NCA-BuilderBiotStart-starting-robot-count"].value}}
+local Items = {{ItemPrototypes["Robot"], settings.global["NCA-BuilderBotStart-starting-robot-count"].value}}
 local ArmorModules = {
 	--Vanilla, 10x10 grid
 	{Name = ItemPrototypes["Roboport"], Count = 4},
@@ -27,7 +27,7 @@ local ArmorModules = {
 
 --Freeplay
 script.on_init(function(event)
-	local speed = settings.global["NCA-BuilderBiotStart-faster-robots"].value
+	local speed = settings.global["NCA-BuilderBotStart-faster-robots"].value
 	if not(speed == 0) then
 		for k,v in pairs(game.forces) do
 			for z = 1, speed, 1 do
