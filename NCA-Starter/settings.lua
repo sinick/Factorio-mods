@@ -5,7 +5,6 @@ data:extend({
         setting_type = "runtime-global",
         default_value = true,
         order = "aa"
-
     }
     ,
     {
