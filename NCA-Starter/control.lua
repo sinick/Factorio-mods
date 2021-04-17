@@ -55,33 +55,15 @@ local function Generate_Inventory(e)
     inventory["rail-signal"]={stack=2}
     inventory["rail-chain-signal"]={stack=2}    
     
-    
     -- ammo and explosive
     inventory["firearm-magazine"]={stack=2}
     inventory["cliff-explosives"]={stack=2}
 
-		
-    -- Find if module list exist in item prototype
-    local is_module_0 = false
-    for name,proto in pairs(itemproto) do
-        if proto.type == "module" then
-            if string.find(name, "module%-0") then
-                is_module_0 = true
-                break
-            end
-        end
-    end
-    -- Create list of module
-    local module_stack = 2
-    if is_module_0 then
-        inventory["speed-module-0"] = {stack=module_stack}
-        inventory["effectivity-module-0"] = {stack=module_stack}
-        inventory["productivity-module-0"] = {stack=module_stack}
-    else
-        inventory["speed-module"] = {stack=module_stack}
-        inventory["effectivity-module"] = {stack=module_stack}
-        inventory["productivity-module"] = {stack=module_stack}
-    end
+    -- Modules
+    inventory["speed-module"] = {stack=2}
+    inventory["effectivity-module"] = {stack=2}
+    inventory["productivity-module"] = {stack=2}
+    
     -- Insert all element
     for name, proto in pairs(inventory) do
         if itemproto[name] then
