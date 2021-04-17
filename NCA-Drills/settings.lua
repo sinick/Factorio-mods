@@ -2,7 +2,7 @@
 data:extend {
     {
         type = "double-setting",
-        name = "NCA-Advanced-Drills-Speed-multiplier",
+        name = "NCA-Drills-Speed-multiplier",
         setting_type = "startup",
         default_value = 1,
         minimum_value = 0.1,

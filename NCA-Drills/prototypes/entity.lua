@@ -384,7 +384,7 @@ local electric_mining_drill_secondary_light =
 	{
     type = "mining-drill",
     name = "advanced-mining-drill",
-    icon = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill.png",
+    icon = "__NCA-Drills__/graphics/advanced-mining-drill.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.3, result = "advanced-mining-drill"},
@@ -441,7 +441,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-N.png",
+              filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-N.png",
               line_length = 1,
               width = 96,
               height = 104,
@@ -453,7 +453,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-N.png",
+                filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-N.png",
                 line_length = 1,
                 width = 190,
                 height = 208,
@@ -523,7 +523,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-E.png",
+              filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-E.png",
               line_length = 1,
               width = 96,
               height = 94,
@@ -535,7 +535,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-E.png",
+                filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-E.png",
                 line_length = 1,
                 width = 192,
                 height = 188,
@@ -663,7 +663,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-W.png",
+              filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-W.png",
               line_length = 1,
               width = 96,
               height = 94,
@@ -675,7 +675,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-W.png",
+                filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-W.png",
                 line_length = 1,
                 width = 192,
                 height = 188,
@@ -975,7 +975,7 @@ local electric_mining_drill_secondary_light =
           east_animation =
           {
             priority = "high",
-            filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-E-front.png",
+            filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-E-front.png",
             line_length = 1,
             width = 66,
             height = 74,
@@ -986,7 +986,7 @@ local electric_mining_drill_secondary_light =
             hr_version =
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-E-front.png",
+              filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-E-front.png",
               line_length = 1,
               width = 136,
               height = 148,
@@ -1003,7 +1003,7 @@ local electric_mining_drill_secondary_light =
             {
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-S-output.png",
+                filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-S-output.png",
                 line_length = 5,
                 width = 44,
                 height = 28,
@@ -1013,7 +1013,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-S-output.png",
+                  filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-S-output.png",
                   line_length = 5,
                   width = 84,
                   height = 56,
@@ -1025,7 +1025,7 @@ local electric_mining_drill_secondary_light =
               },
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-S-front.png",
+                filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-S-front.png",
                 line_length = 1,
                 width = 96,
                 height = 54,
@@ -1036,7 +1036,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-S-front.png",
+                  filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-S-front.png",
                   line_length = 1,
                   width = 190,
                   height = 104,
@@ -1052,7 +1052,7 @@ local electric_mining_drill_secondary_light =
           west_animation =
           {
             priority = "high",
-            filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-W-front.png",
+            filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-W-front.png",
             line_length = 1,
             width = 68,
             height = 70,
@@ -1063,7 +1063,7 @@ local electric_mining_drill_secondary_light =
             hr_version =
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-W-front.png",
+              filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-W-front.png",
               line_length = 1,
               width = 134,
               height = 140,
@@ -1101,7 +1101,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-N-wet.png",
+              filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-N-wet.png",
               line_length = 1,
               width = 96,
               height = 100,
@@ -1113,7 +1113,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-N-wet.png",
+                filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-N-wet.png",
                 line_length = 1,
                 width = 190,
                 height = 198,
@@ -1183,7 +1183,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-W-wet.png",
+              filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-W-wet.png",
               line_length = 1,
               width = 96,
               height = 106,
@@ -1195,7 +1195,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-W-wet.png",
+                filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-W-wet.png",
                 line_length = 1,
                 width = 194,
                 height = 208,
@@ -1323,7 +1323,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-E-wet.png",
+              filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-E-wet.png",
               line_length = 1,
               width = 98,
               height = 106,
@@ -1335,7 +1335,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-E-wet.png",
+                filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-E-wet.png",
                 line_length = 1,
                 width = 194,
                 height = 208,
@@ -2324,7 +2324,7 @@ local electric_mining_drill_secondary_light =
             {
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-W-wet-front.png",
+                filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-W-wet-front.png",
                 line_length = 1,
                 width = 104,
                 height = 72,
@@ -2335,7 +2335,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-W-wet-front.png",
+                  filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-W-wet-front.png",
                   line_length = 1,
                   width = 208,
                   height = 144,
@@ -2354,7 +2354,7 @@ local electric_mining_drill_secondary_light =
             {
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-S-output.png",
+                filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-S-output.png",
                 line_length = 5,
                 width = 44,
                 height = 28,
@@ -2364,7 +2364,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-S-output.png",
+                  filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-S-output.png",
                   line_length = 5,
                   width = 84,
                   height = 56,
@@ -2376,7 +2376,7 @@ local electric_mining_drill_secondary_light =
               },
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-S-wet-front.png",
+                filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-S-wet-front.png",
                 line_length = 1,
                 width = 96,
                 height = 70,
@@ -2387,7 +2387,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-S-wet-front.png",
+                  filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-S-wet-front.png",
                   line_length = 1,
                   width = 192,
                   height = 140,
@@ -2406,7 +2406,7 @@ local electric_mining_drill_secondary_light =
             {
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/electric-mining-drill-E-wet-front.png",
+                filename = "__NCA-Drills__/graphics/advanced-mining-drill/electric-mining-drill-E-wet-front.png",
                 line_length = 1,
                 width = 106,
                 height = 76,
@@ -2417,7 +2417,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-E-wet-front.png",
+                  filename = "__NCA-Drills__/graphics/advanced-mining-drill/hr-electric-mining-drill-E-wet-front.png",
                   line_length = 1,
                   width = 208,
                   height = 148,
@@ -2575,7 +2575,7 @@ local electric_mining_drill_secondary_light =
 	{
     type = "mining-drill",
     name = "elite-mining-drill",
-    icon = "__NCA-Advanced-Drills__/graphics/elite-mining-drill.png",
+    icon = "__NCA-Drills__/graphics/elite-mining-drill.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.3, result = "elite-mining-drill"},
@@ -2632,7 +2632,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-N.png",
+              filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-N.png",
               line_length = 1,
               width = 96,
               height = 104,
@@ -2644,7 +2644,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-N.png",
+                filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-N.png",
                 line_length = 1,
                 width = 190,
                 height = 208,
@@ -2714,7 +2714,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-E.png",
+              filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-E.png",
               line_length = 1,
               width = 96,
               height = 94,
@@ -2726,7 +2726,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-E.png",
+                filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-E.png",
                 line_length = 1,
                 width = 192,
                 height = 188,
@@ -2854,7 +2854,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-W.png",
+              filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-W.png",
               line_length = 1,
               width = 96,
               height = 94,
@@ -2866,7 +2866,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-W.png",
+                filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-W.png",
                 line_length = 1,
                 width = 192,
                 height = 188,
@@ -3166,7 +3166,7 @@ local electric_mining_drill_secondary_light =
           east_animation =
           {
             priority = "high",
-            filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-E-front.png",
+            filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-E-front.png",
             line_length = 1,
             width = 66,
             height = 74,
@@ -3177,7 +3177,7 @@ local electric_mining_drill_secondary_light =
             hr_version =
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-E-front.png",
+              filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-E-front.png",
               line_length = 1,
               width = 136,
               height = 148,
@@ -3194,7 +3194,7 @@ local electric_mining_drill_secondary_light =
             {
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-S-output.png",
+                filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-S-output.png",
                 line_length = 5,
                 width = 44,
                 height = 28,
@@ -3204,7 +3204,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-S-output.png",
+                  filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-S-output.png",
                   line_length = 5,
                   width = 84,
                   height = 56,
@@ -3216,7 +3216,7 @@ local electric_mining_drill_secondary_light =
               },
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-S-front.png",
+                filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-S-front.png",
                 line_length = 1,
                 width = 96,
                 height = 54,
@@ -3227,7 +3227,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-S-front.png",
+                  filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-S-front.png",
                   line_length = 1,
                   width = 190,
                   height = 104,
@@ -3243,7 +3243,7 @@ local electric_mining_drill_secondary_light =
           west_animation =
           {
             priority = "high",
-            filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-W-front.png",
+            filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-W-front.png",
             line_length = 1,
             width = 68,
             height = 70,
@@ -3254,7 +3254,7 @@ local electric_mining_drill_secondary_light =
             hr_version =
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-W-front.png",
+              filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-W-front.png",
               line_length = 1,
               width = 134,
               height = 140,
@@ -3292,7 +3292,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-N-wet.png",
+              filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-N-wet.png",
               line_length = 1,
               width = 96,
               height = 100,
@@ -3304,7 +3304,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-N-wet.png",
+                filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-N-wet.png",
                 line_length = 1,
                 width = 190,
                 height = 198,
@@ -3374,7 +3374,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-W-wet.png",
+              filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-W-wet.png",
               line_length = 1,
               width = 96,
               height = 106,
@@ -3386,7 +3386,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-W-wet.png",
+                filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-W-wet.png",
                 line_length = 1,
                 width = 194,
                 height = 208,
@@ -3514,7 +3514,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-E-wet.png",
+              filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-E-wet.png",
               line_length = 1,
               width = 98,
               height = 106,
@@ -3526,7 +3526,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-E-wet.png",
+                filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-E-wet.png",
                 line_length = 1,
                 width = 194,
                 height = 208,
@@ -4515,7 +4515,7 @@ local electric_mining_drill_secondary_light =
             {
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-W-wet-front.png",
+                filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-W-wet-front.png",
                 line_length = 1,
                 width = 104,
                 height = 72,
@@ -4526,7 +4526,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-W-wet-front.png",
+                  filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-W-wet-front.png",
                   line_length = 1,
                   width = 208,
                   height = 144,
@@ -4545,7 +4545,7 @@ local electric_mining_drill_secondary_light =
             {
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-S-output.png",
+                filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-S-output.png",
                 line_length = 5,
                 width = 44,
                 height = 28,
@@ -4555,7 +4555,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-S-output.png",
+                  filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-S-output.png",
                   line_length = 5,
                   width = 84,
                   height = 56,
@@ -4567,7 +4567,7 @@ local electric_mining_drill_secondary_light =
               },
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-S-wet-front.png",
+                filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-S-wet-front.png",
                 line_length = 1,
                 width = 96,
                 height = 70,
@@ -4578,7 +4578,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-S-wet-front.png",
+                  filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-S-wet-front.png",
                   line_length = 1,
                   width = 192,
                   height = 140,
@@ -4597,7 +4597,7 @@ local electric_mining_drill_secondary_light =
             {
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/electric-mining-drill-E-wet-front.png",
+                filename = "__NCA-Drills__/graphics/elite-mining-drill/electric-mining-drill-E-wet-front.png",
                 line_length = 1,
                 width = 106,
                 height = 76,
@@ -4608,7 +4608,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-E-wet-front.png",
+                  filename = "__NCA-Drills__/graphics/elite-mining-drill/hr-electric-mining-drill-E-wet-front.png",
                   line_length = 1,
                   width = 208,
                   height = 148,
@@ -4766,7 +4766,7 @@ local electric_mining_drill_secondary_light =
 	{
     type = "mining-drill",
     name = "ultimate-mining-drill",
-    icon = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill.png",
+    icon = "__NCA-Drills__/graphics/ultimate-mining-drill.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.3, result = "ultimate-mining-drill"},
@@ -4823,7 +4823,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-N.png",
+              filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-N.png",
               line_length = 1,
               width = 96,
               height = 104,
@@ -4835,7 +4835,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-N.png",
+                filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-N.png",
                 line_length = 1,
                 width = 190,
                 height = 208,
@@ -4905,7 +4905,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-E.png",
+              filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-E.png",
               line_length = 1,
               width = 96,
               height = 94,
@@ -4917,7 +4917,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-E.png",
+                filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-E.png",
                 line_length = 1,
                 width = 192,
                 height = 188,
@@ -5045,7 +5045,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-W.png",
+              filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-W.png",
               line_length = 1,
               width = 96,
               height = 94,
@@ -5057,7 +5057,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-W.png",
+                filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-W.png",
                 line_length = 1,
                 width = 192,
                 height = 188,
@@ -5357,7 +5357,7 @@ local electric_mining_drill_secondary_light =
           east_animation =
           {
             priority = "high",
-            filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-E-front.png",
+            filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-E-front.png",
             line_length = 1,
             width = 66,
             height = 74,
@@ -5368,7 +5368,7 @@ local electric_mining_drill_secondary_light =
             hr_version =
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-E-front.png",
+              filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-E-front.png",
               line_length = 1,
               width = 136,
               height = 148,
@@ -5385,7 +5385,7 @@ local electric_mining_drill_secondary_light =
             {
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-S-output.png",
+                filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-S-output.png",
                 line_length = 5,
                 width = 44,
                 height = 28,
@@ -5395,7 +5395,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-S-output.png",
+                  filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-S-output.png",
                   line_length = 5,
                   width = 84,
                   height = 56,
@@ -5407,7 +5407,7 @@ local electric_mining_drill_secondary_light =
               },
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-S-front.png",
+                filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-S-front.png",
                 line_length = 1,
                 width = 96,
                 height = 54,
@@ -5418,7 +5418,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-S-front.png",
+                  filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-S-front.png",
                   line_length = 1,
                   width = 190,
                   height = 104,
@@ -5434,7 +5434,7 @@ local electric_mining_drill_secondary_light =
           west_animation =
           {
             priority = "high",
-            filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-W-front.png",
+            filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-W-front.png",
             line_length = 1,
             width = 68,
             height = 70,
@@ -5445,7 +5445,7 @@ local electric_mining_drill_secondary_light =
             hr_version =
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-W-front.png",
+              filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-W-front.png",
               line_length = 1,
               width = 134,
               height = 140,
@@ -5483,7 +5483,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-N-wet.png",
+              filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-N-wet.png",
               line_length = 1,
               width = 96,
               height = 100,
@@ -5495,7 +5495,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-N-wet.png",
+                filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-N-wet.png",
                 line_length = 1,
                 width = 190,
                 height = 198,
@@ -5565,7 +5565,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-W-wet.png",
+              filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-W-wet.png",
               line_length = 1,
               width = 96,
               height = 106,
@@ -5577,7 +5577,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-W-wet.png",
+                filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-W-wet.png",
                 line_length = 1,
                 width = 194,
                 height = 208,
@@ -5705,7 +5705,7 @@ local electric_mining_drill_secondary_light =
           {
             {
               priority = "high",
-              filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-E-wet.png",
+              filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-E-wet.png",
               line_length = 1,
               width = 98,
               height = 106,
@@ -5717,7 +5717,7 @@ local electric_mining_drill_secondary_light =
               hr_version =
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-E-wet.png",
+                filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-E-wet.png",
                 line_length = 1,
                 width = 194,
                 height = 208,
@@ -6706,7 +6706,7 @@ local electric_mining_drill_secondary_light =
             {
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-W-wet-front.png",
+                filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-W-wet-front.png",
                 line_length = 1,
                 width = 104,
                 height = 72,
@@ -6717,7 +6717,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-W-wet-front.png",
+                  filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-W-wet-front.png",
                   line_length = 1,
                   width = 208,
                   height = 144,
@@ -6736,7 +6736,7 @@ local electric_mining_drill_secondary_light =
             {
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-S-output.png",
+                filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-S-output.png",
                 line_length = 5,
                 width = 44,
                 height = 28,
@@ -6746,7 +6746,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-S-output.png",
+                  filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-S-output.png",
                   line_length = 5,
                   width = 84,
                   height = 56,
@@ -6758,7 +6758,7 @@ local electric_mining_drill_secondary_light =
               },
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-S-wet-front.png",
+                filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-S-wet-front.png",
                 line_length = 1,
                 width = 96,
                 height = 70,
@@ -6769,7 +6769,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-S-wet-front.png",
+                  filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-S-wet-front.png",
                   line_length = 1,
                   width = 192,
                   height = 140,
@@ -6788,7 +6788,7 @@ local electric_mining_drill_secondary_light =
             {
               {
                 priority = "high",
-                filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-E-wet-front.png",
+                filename = "__NCA-Drills__/graphics/ultimate-mining-drill/electric-mining-drill-E-wet-front.png",
                 line_length = 1,
                 width = 106,
                 height = 76,
@@ -6799,7 +6799,7 @@ local electric_mining_drill_secondary_light =
                 hr_version =
                 {
                   priority = "high",
-                  filename = "__NCA-Advanced-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-E-wet-front.png",
+                  filename = "__NCA-Drills__/graphics/ultimate-mining-drill/hr-electric-mining-drill-E-wet-front.png",
                   line_length = 1,
                   width = 208,
                   height = 148,

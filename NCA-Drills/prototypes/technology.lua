@@ -3,7 +3,7 @@ data:extend({
     type = "technology",
     name = "advanced-mining-drill",
 	icon_size = 256, icon_mipmaps = 1,
-    icon = "__NCA-Advanced-Drills__/graphics/technology/advanced-mining-drill.png",
+    icon = "__NCA-Drills__/graphics/technology/advanced-mining-drill.png",
     prerequisites = {"steel-processing", "logistic-science-pack"},
     unit =
 		{
@@ -28,7 +28,7 @@ data:extend({
     type = "technology",
     name = "elite-mining-drill",
 	icon_size = 256, icon_mipmaps = 1,
-    icon = "__NCA-Advanced-Drills__/graphics/technology/elite-mining-drill.png",
+    icon = "__NCA-Drills__/graphics/technology/elite-mining-drill.png",
     prerequisites = {"advanced-mining-drill", "battery", "chemical-science-pack"},
     unit =
 		{
@@ -54,7 +54,7 @@ data:extend({
     type = "technology",
     name = "ultimate-mining-drill",
 	icon_size = 256, icon_mipmaps = 1,
-    icon = "__NCA-Advanced-Drills__/graphics/technology/ultimate-mining-drill.png",
+    icon = "__NCA-Drills__/graphics/technology/ultimate-mining-drill.png",
     prerequisites = {"elite-mining-drill", "advanced-electronics-2", "speed-module"},
     unit =
 		{
