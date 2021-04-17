@@ -9,20 +9,8 @@ function min (val1, val2)
   return val1
 end
 
-
--- area multiplier
-local mult_area =  1 
-if settings.startup["NCA-Electric-pole-area"]
-then
-  mult_area =  settings.startup["NCA-Electric-pole-area"].value
-end
-
--- wire multiplier
-local mult_wire =  1 
-if settings.startup["NCA-Electric-pole-wire"]
-then
-  mult_wire =  settings.startup["NCA-Electric-pole-wire"].value
-end
+local mult_area =  settings.startup["NCA-Electric-pole-area"].value
+local mult_wire =  settings.startup["NCA-Electric-pole-wire"].value
 
 data.raw["electric-pole"]["small-electric-pole"].maximum_wire_distance = min(data.raw["electric-pole"]["small-electric-pole"].maximum_wire_distance * mult_wire, 64)
 data.raw["electric-pole"]["small-electric-pole"].supply_area_distance = min(data.raw["electric-pole"]["small-electric-pole"].supply_area_distance * mult_area, 64)

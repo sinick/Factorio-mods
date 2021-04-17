@@ -1,13 +1,21 @@
 data:extend(
 {
 	{
+		type = "bool-setting",
+		name = "NCA-Electric-pole-alternative",
+		setting_type = "startup",
+		default_value = false,
+		per_user = true,
+		order = "aa"
+	},
+	{
 		type = "int-setting",
 		name = "NCA-Electric-pole-area",
 		setting_type = "startup",
 		minimum_value = 1,
 		default_value = 2,
 		maximum_value = 4,
-		order = "a"
+		order = "ba"
 	},
 	{
 		type = "int-setting",
@@ -16,6 +24,6 @@ data:extend(
 		minimum_value = 1,
 		default_value = 2,
 		maximum_value = 4,
-		order = "b"
-	},
+		order = "bb"
+	}
 })
