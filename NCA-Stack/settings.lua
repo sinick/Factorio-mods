@@ -10,7 +10,7 @@ data:extend {
         order = 'aa'
     },
     {
-        type = "double-setting",
+        type = "int-setting",
         name = "NCA-Stack-ammo-multiplier",
         setting_type = "startup",
         default_value = 10,

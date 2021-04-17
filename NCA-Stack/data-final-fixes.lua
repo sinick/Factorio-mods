@@ -10,6 +10,8 @@ if stack_multiplier ~= 1 or logistic_multiplier ~= 1 then
 		for _,item in pairs(dat) do
 			if item.stack_size and type(item.stack_size) == "number" and item.stack_size > 1 then
 				item.stack_size = item.stack_size * stack_multiplier
+			end
+			if item.default_request_amount then
 				item.default_request_amount = item.default_request_amount * logistic_multiplier
 			end
 		end
@@ -30,15 +32,19 @@ end
 if ammo_multiplier ~= 1 or logistic_multiplier ~= 1 then
 	-- Ammo Stacks
 	for _, item in pairs(data.raw.ammo) do
-		item.magazine_size = item.magazine_size * ammo_multiplier
-		item.default_request_amount = item.default_request_amount * logistic_multiplier
+		if item.magazine_size then
+			item.magazine_size = item.magazine_size * ammo_multiplier
+		end
+		if item.default_request_amount then
+			item.default_request_amount = item.default_request_amount * logistic_multiplier
+		end
 	end
 end
 
 
 
 if run_multiplier ~= 1 then
-	data.raw.player.player.running_speed = data.raw.player.player.running_speed * run_multiplier
+	data.raw.character.character.running_speed = data.raw.character.character.running_speed * run_multiplier
 end
 
 
