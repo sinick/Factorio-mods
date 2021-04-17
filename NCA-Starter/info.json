@@ -1,10 +1,10 @@
 {
-    "name": "NCA-BuilderBotStart",
+    "name": "NCA-Starter",
     "version": "0.3.2",
     "title": "NCA Builder Bot Start",
     "author": "NCA",
     "contact": "",
     "homepage": "",
     "factorio_version": "1.1",
-    "description": "Upgrade your engineer with Builder Bot Start (Tweak from Prymaldark mod)."
+    "description": "Upgrade your engineer with Builder Bot Start (Tweak from Prymaldark mod) and add starter items."
 }
