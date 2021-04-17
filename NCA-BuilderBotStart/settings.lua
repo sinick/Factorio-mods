@@ -1,7 +1,7 @@
 data:extend({
     {
         type = "int-setting",
-        name = "starting robot count",
+        name = "NCA-BuilderBiotStart-starting-robot-count",
         setting_type = "runtime-global",
         default_value = 50,
         minimum_value = 50,
@@ -10,7 +10,7 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "faster robots",
+        name = "NCA-BuilderBiotStart-faster-robots",
         setting_type = "runtime-global",
         default_value = 0,
         minimum_value = 0,
