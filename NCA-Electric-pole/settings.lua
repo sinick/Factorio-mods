@@ -2,7 +2,7 @@ data:extend(
 {
 	{
 		type = "int-setting",
-		name = "NCA-Electric_pole_distance-area",
+		name = "NCA-Electric-pole-area",
 		setting_type = "startup",
 		minimum_value = 1,
 		default_value = 2,
@@ -11,7 +11,7 @@ data:extend(
 	},
 	{
 		type = "int-setting",
-		name = "NCA-Electric_pole_distance-wire",
+		name = "NCA-Electric-pole-wire",
 		setting_type = "startup",
 		minimum_value = 1,
 		default_value = 2,
