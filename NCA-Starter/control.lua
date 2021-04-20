@@ -20,55 +20,61 @@ local function Generate_Inventory(e)
     
     -- Other
     inventory["steel-chest"]={stack=1}
-    inventory["small-lamp"]={stack=2}
+    -- inventory["small-lamp"]={stack=2}
             
     -- Fluid
-    inventory["pipe"]={stack=1}
-    inventory["pipe-to-ground"]={stack=1}
+    inventory["pipe"]={stack=2}
+    inventory["pipe-to-ground"]={stack=2}
     if game.active_mods["inland_pumps"] then
-        inventory["offshore-pump-inland"]={stack=1}
+        inventory["offshore-pump-inland"]={stack=2}
     else
-        inventory["offshore-pump"]={stack=1}
+        inventory["offshore-pump"]={stack=2}
     end
     inventory["pump"]={stack=1}
     inventory["storage-tank"]={stack=1}
     
     -- Machine
-    inventory["electric-mining-drill"]={stack=2}
-    inventory["electric-furnace"]={stack=4}
-    inventory["assembling-machine-1"]={stack=2}
+    inventory["electric-mining-drill"]={stack=3}
+    inventory["electric-furnace"]={stack=5}
+    inventory["assembling-machine-1"]={stack=3}
     inventory["lab"]={stack=1}
     
     -- Logistic
-    inventory["transport-belt"]={stack=4}
-    inventory["underground-belt"]={stack=1}
-    inventory["splitter"]={stack=1}
-    inventory["loader"]={stack=1}
-    inventory["inserter"]={stack=4}
+    inventory["transport-belt"]={stack=5}
+    inventory["underground-belt"]={stack=2}
+    inventory["splitter"]={stack=2}
+    inventory["loader"]={stack=2}
+    inventory["inserter"]={stack=5}
 
     -- Train
     inventory["locomotive"]={stack=1}
-    inventory["cargo-wagon"]={stack=2}
-    inventory["fluid-wagon"]={stack=2}
-    inventory["rail"]={stack=4}
-    inventory["train-stop"]={stack=2}
-    inventory["rail-signal"]={stack=2}
-    inventory["rail-chain-signal"]={stack=2}    
+    inventory["cargo-wagon"]={stack=3}
+    inventory["fluid-wagon"]={stack=3}
+    inventory["rail"]={stack=5}
+    inventory["train-stop"]={stack=3}
+    inventory["rail-signal"]={stack=3}
+    inventory["rail-chain-signal"]={stack=3}    
     
     -- ammo and explosive
     inventory["firearm-magazine"]={stack=2}
     inventory["cliff-explosives"]={stack=2}
 
     -- Modules
-    inventory["speed-module"] = {stack=2}
-    inventory["effectivity-module"] = {stack=2}
-    inventory["productivity-module"] = {stack=2}
+	if game.active_mods["CircuitProcessing"] then
+		inventory["speed-module-2"] = {stack=2}
+		inventory["effectivity-module-2"] = {stack=2}
+		inventory["productivity-module-2"] = {stack=2}
+	else
+		inventory["speed-module"] = {stack=2}
+		inventory["effectivity-module"] = {stack=2}
+		inventory["productivity-module"] = {stack=2}
+	end
     
     -- Insert all element
     for name, proto in pairs(inventory) do
         if itemproto[name] then
-            player.print("Add " .. itemproto[name].stack_size * proto.stack .. " of ".. name .. ".")
-            player.insert{ name = name, count = itemproto[name].stack_size * proto.stack }
+				player.print("Add " .. itemproto[name].stack_size * proto.stack .. " of ".. name .. ".")
+				player.insert{ name = name, count = itemproto[name].stack_size * proto.stack }
         end
     end
 end
