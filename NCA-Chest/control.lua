@@ -27,7 +27,7 @@ end
 
 local function purge(player)
 	for i=0,#chest_list.chests do
-		purge_with_name(player,  chest_list.chest[i].name)
+		purge_with_name(player,  chest_list.chests[i].name)
 	end
 end
 
@@ -52,7 +52,7 @@ local function on_selected_area(event)
 		end
 	end
 	
-	purge_with_name(player,  chest_list.chest[local_purge_index].name )
+	purge_with_name(player,  chest_list.chests[local_purge_index].name )
 	local_purge_index = local_purge_index + 1
 	if local_purge_index > #chest_list.chests then
 		local_purge_index = 1

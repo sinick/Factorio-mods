@@ -3,7 +3,7 @@ local chest_list = require("config")
 -- Create Chest
 local function create_chest(index) 
 	local chest_data = table.deepcopy(data.raw["linked-container"]["linked-chest"])
-	chest_data.name =  chest_list.chest[index].name
+	chest_data.name =  chest_list.chests[index].name
 	chest_data.icon_size = 64
 	chest_data.icons = {
 		{
@@ -11,14 +11,14 @@ local function create_chest(index)
 		}, 
 		{
 			icon = "__NCA-Chest__/graphics/icons/chest-mask.png",
-			tint = chest_list.chest[index].tint
+			tint = chest_list.chests[index].tint
 		}
 	}
 	chest_data.icon_mipmaps = 4
 	chest_data.inventory_size = 80
 
 	chest_data.allow_copy_paste = false
-	chest_data.minable = {hardness = 0.2, mining_time = 0.2, result = chest_list.chest[index].name }
+	chest_data.minable = {hardness = 0.2, mining_time = 0.2, result = chest_list.chests[index].name }
 	chest_data.gui_mode = "none"
 
 	chest_data.picture.layers[1].filename = "__NCA-Chest__/graphics/entity/chest.png"
@@ -27,11 +27,11 @@ local function create_chest(index)
 	local color_layer = table.deepcopy(chest_data.picture.layers[1])
 	table.insert(chest_data.picture.layers, 2, color_layer)
 
-	color_layer.tint = chest_list.chest[index].tint
+	color_layer.tint = chest_list.chests[index].tint
 	color_layer.apply_runtime_tint = true
 	color_layer.filename = "__NCA-Chest__/graphics/entity/chest-mask.png"
 
-	color_layer.hr_version.tint = chest_list.chest[index].tint
+	color_layer.hr_version.tint = chest_list.chests[index].tint
 	color_layer.hr_version.apply_runtime_tint = true
 	color_layer.hr_version.filename = "__NCA-Chest__/graphics/entity/hr-chest-mask.png"
 
@@ -40,7 +40,7 @@ local function create_chest(index)
 		chest_data,
 		{
 			type = "item",
-			name = chest_list.chest[index].name,
+			name = chest_list.chests[index].name,
 			icon_size = 64, 
 			icons = {
 				{
@@ -48,18 +48,18 @@ local function create_chest(index)
 				}, 
 				{
 					icon = "__NCA-Chest__/graphics/icons/chest-mask.png",
-					tint = chest_list.chest[index].tint
+					tint = chest_list.chests[index].tint
 				}
 			},
 			icon_mipmaps = 4,
 			subgroup = "storage",
-			order = "[" .. chest_list.chest[index].name .. "]",
-			place_result = chest_list.chest[index].name,
+			order = "[" .. chest_list.chests[index].name .. "]",
+			place_result = chest_list.chests[index].name,
 			stack_size = 10
 		},
 		{
 			type = "recipe",
-			name = chest_list.chest[index].name,
+			name = chest_list.chests[index].name,
 			enabled = false,
 			ingredients =
 			{
@@ -68,7 +68,7 @@ local function create_chest(index)
 			  {"electronic-circuit", 5},
 			  {"copper-cable", 10}
 			},
-			result = chest_list.chest[index].name
+			result = chest_list.chests[index].name
 		}
 	}
 end
@@ -77,8 +77,8 @@ local recipe_effects = {}
 local names = {}
 for i=0, #chest_list.chests do
 	create_chest(i)
-	table.insert(names, chest_list.chest[i].name)
-	table.insert(recipe_effects, { type = "unlock-recipe", recipe = chest_list.chest[i].name })
+	table.insert(names, chest_list.chests[i].name)
+	table.insert(recipe_effects, { type = "unlock-recipe", recipe = chest_list.chests[i].name })
 end
 
 data:extend(	
