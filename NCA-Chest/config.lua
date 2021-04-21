@@ -16,10 +16,10 @@ create_chest("green",       {0, 1, 0, 1})
 create_chest("purple",      {0.5, 0, 0.25, 1})
 create_chest("blue",        {0, 0, 1, 1})
 create_chest("cyan",        {0, 1, 1, 1})
-create_chest("black",       {0, 0, 0, 1})
+create_chest("black",       {0, 0, 0, 0.9})
 create_chest("white",       {1, 1, 1, 1})
-create_chest("grey",        {0.5, 0.5, 0.5, 1})
-create_chest("brown",       {0.64, 0.64, 0.64, 1})
+create_chest("grey",        {0.34, 0.34, 0.34, 1})
+create_chest("brown",       {0.71, 0.33, 0.33, 1})
 
 
 return chest_list
