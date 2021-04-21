@@ -75,7 +75,7 @@ end
 
 local recipe_effects = {}
 local names = {}
-for i=0, #chest_list.chests do
+for i=1, #chest_list.chests do
 	create_chest(i)
 	table.insert(names, chest_list.chests[i].name)
 	table.insert(recipe_effects, { type = "unlock-recipe", recipe = chest_list.chests[i].name })

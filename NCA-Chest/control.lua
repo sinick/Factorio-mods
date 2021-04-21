@@ -26,7 +26,7 @@ local function purge_with_name(player, name)
 end
 
 local function purge(player)
-	for i=0,#chest_list.chests do
+	for i=1,#chest_list.chests do
 		purge_with_name(player,  chest_list.chests[i].name)
 	end
 end
@@ -70,7 +70,7 @@ local function on_built(evt)
 end
 
 local entity_filter = {}
-for i=0, #chest_list.chests do
+for i=1, #chest_list.chests do
 	table.insert(entity_filter, {filter='name', name=chest_list.chests[i].name})
 end
 
