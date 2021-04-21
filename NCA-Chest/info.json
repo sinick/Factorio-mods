@@ -1,0 +1,14 @@
+{
+  "name": "NCA-Chest",
+  "version": "0.0.1",
+  "title": "NCA Smart chest",
+  "author": "",
+  "contact": "",
+  "homepage": "",
+  "description": "Linked chest ready to build megabases (modify from Telkine2018)",
+  "factorio_version": "1.1",
+  "dependencies": [
+		"base >= 1.1",
+		"! space-exploration"
+	]
+}
