@@ -1,5 +1,7 @@
 local chest_list = require("config")
 
+require ("circuit-connector-sprites")
+
 -- Create Chest
 local function create_chest(index) 
 	local chest_data = table.deepcopy(data.raw["linked-container"]["linked-chest"])
@@ -23,6 +25,10 @@ local function create_chest(index)
 
 	chest_data.picture.layers[1].filename = "__NCA-Chest__/graphics/entity/chest.png"
 	chest_data.picture.layers[1].hr_version.filename = "__NCA-Chest__/graphics/entity/hr-chest.png"
+
+	chest_data.circuit_wire_connection_point = circuit_connector_definitions["chest"].points
+    chest_data.circuit_connector_sprites = circuit_connector_definitions["chest"].sprites
+    chest_data.circuit_wire_max_distance = default_circuit_wire_max_distance
 
 	local color_layer = table.deepcopy(chest_data.picture.layers[1])
 	table.insert(chest_data.picture.layers, 2, color_layer)
