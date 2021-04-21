@@ -4,7 +4,7 @@ chest_list.prefix = "NCA-Chest-"
 chest_list.chests = {}
 -- Function to create 1 chest
 local function create_chest (color_name, tint_value)
-    table.insert(chest_list.chests, {name=chest_list.prefix .. color_name, color=color_name, tint=tint_value}
+    table.insert(chest_list.chests, {name=chest_list.prefix .. color_name, color=color_name, tint=tint_value})
 end
 
 -- Create list of chest an its information
