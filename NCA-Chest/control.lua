@@ -1,10 +1,16 @@
 local chest_list = require("config")
 
+local local_purge_index = 1
+local entity_filter = {}
+for i=1, #chest_list.chests do
+	table.insert(entity_filter, {filter='name', name=chest_list.chests[i].name})
+end
+
+
 local function get_id()
 	local id = global.id or 1
 	id = id + 1
 	global.id = id
-
 	return id
 end
 
@@ -25,14 +31,8 @@ local function purge_with_name(player, name)
 	end
 end
 
-local function purge(player)
-	for i=1,#chest_list.chests do
-		purge_with_name(player,  chest_list.chests[i].name)
-	end
-end
 
-local local_purge_index = 1
-
+--- Function for event
 local function on_selected_area(event)
 	local player = game.players[event.player_index]
 	if event.item ~= "sc-merge-tool"  then return end	
@@ -59,21 +59,18 @@ local function on_selected_area(event)
 	end
 end	
 
-script.on_event(defines.events.on_player_selected_area, on_selected_area)
-
-local function on_built(evt)
-	local e = evt.created_entity or evt.entity
+local function on_built(event)
+	local e = event.created_entity or event.entity
 	if not e or not e.valid then return end
-	
 	e.link_id = get_id()
 	local inv = e.get_inventory(defines.inventory.chest)
 end
 
-local entity_filter = {}
-for i=1, #chest_list.chests do
-	table.insert(entity_filter, {filter='name', name=chest_list.chests[i].name})
-end
 
+
+
+--- Init and event
+script.on_event(defines.events.on_player_selected_area, on_selected_area)
 script.on_event(defines.events.on_built_entity, on_built, entity_filter)
 script.on_event(defines.events.on_robot_built_entity, on_built, entity_filter)
 script.on_event(defines.events.script_raised_built, on_built, entity_filter)

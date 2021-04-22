@@ -41,6 +41,7 @@ local function create_chest(index)
 	color_layer.hr_version.apply_runtime_tint = true
 	color_layer.hr_version.filename = "__NCA-Chest__/graphics/entity/hr-chest-mask.png"
 
+
 	data:extend
 	{
 		chest_data,
