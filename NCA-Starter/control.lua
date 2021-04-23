@@ -25,6 +25,15 @@ local function Generate_Inventory(e)
     
     -- Other
     inventory["steel-chest"]={stack=1}
+	if game.active_mods["no-belts"] then
+		inventory["logistic-chest-passive-provider"]={stack=1}
+		inventory["logistic-chest-active-provider"]={stack=1}
+		inventory["logistic-chest-storage"]={stack=1}
+		inventory["logistic-chest-buffer"]={stack=1}
+		inventory["logistic-chest-requester"]={stack=1}
+		inventory["red-wire"]={stack=1}
+		inventory["green-wire"]={stack=1}
+	end
     -- inventory["small-lamp"]={stack=2}
             
     -- Fluid
@@ -50,6 +59,10 @@ local function Generate_Inventory(e)
 		inventory["fast-underground-belt"]={stack=2}
 		inventory["fast-splitter"]={stack=2}
 		inventory["fast-loader"]={stack=2}
+	else
+		inventory["logistic-robot"]={stack=1}
+		inventory["construction-robot"]={stack=1}
+		inventory["roboport"]={stack=1}
 	end
 	inventory["fast-inserter"]={stack=5}
 
