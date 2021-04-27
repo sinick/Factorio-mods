@@ -13,10 +13,8 @@ local function Generate_Inventory(e)
     inventory["copper-plate"]={stack=1}
     inventory["steel-plate"]={stack=1}
     inventory["stone-brick"]={stack=1}
-	if game.active_mods["no-belts"] then
-		inventory["iron-gear-wheel"]={stack=1}
-		inventory["electronic-circuit"]={stack=1}
-	end
+	inventory["iron-gear-wheel"]={stack=1}
+	inventory["electronic-circuit"]={stack=1}
     
     -- Power
     inventory["medium-electric-pole"]={stack=2}
@@ -54,15 +52,20 @@ local function Generate_Inventory(e)
     inventory["lab"]={stack=1}
     
     -- Logistic
-	if not game.active_mods["no-belts"] then
-		inventory["fast-transport-belt"]={stack=5}
-		inventory["fast-underground-belt"]={stack=2}
-		inventory["fast-splitter"]={stack=2}
-		inventory["fast-loader"]={stack=2}
-	else
+	if game.active_mods["no-belts"] then
 		inventory["logistic-robot"]={stack=1}
 		inventory["construction-robot"]={stack=1}
 		inventory["roboport"]={stack=1}
+	else
+		inventory["fast-transport-belt"]={stack=5}
+		inventory["fast-underground-belt"]={stack=2}
+		inventory["fast-splitter"]={stack=2}
+		if game.active_mods["deadlock-beltboxes-loaders"] then
+			inventory["fast-transport-belt-loader"]={stack=1}
+			inventory["fast-transport-belt-beltbox"]={stack=2}
+		else
+			inventory["fast-loader"]={stack=2}
+		end
 	end
 	inventory["fast-inserter"]={stack=5}
 
