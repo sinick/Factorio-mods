@@ -47,6 +47,7 @@ if run_multiplier ~= 1 then
 	data.raw.character.character.running_speed = data.raw.character.character.running_speed * run_multiplier
 end
 
+data.raw.character.character.inventory_size = 200
 
 
 
