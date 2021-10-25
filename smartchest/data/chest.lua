@@ -154,7 +154,7 @@ local function create_chest(index, tint, is_core)
 			place_result = name,
 			flags = {"hidden","not-stackable"},
 			stack_size = 1,
-			inventory_size = settings.startup["sc-chest-slot-" .. index].value,
+			inventory_size = chest_data.inventory_size,
 			extends_inventory_by_default = true
 		}
 	}
