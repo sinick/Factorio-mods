@@ -87,7 +87,11 @@ local function create_chest(index, tint, is_core)
 		}
 	}
 	chest_data.icon_mipmaps = 4
-	chest_data.inventory_size = settings.startup["sc-chest-slot-" .. index].value
+	if settings.startup["sc-chest-slot-" .. index] then
+		chest_data.inventory_size = settings.startup["sc-chest-slot-" .. index].value
+	else
+		chest_data.inventory_size = settings.startup["sc-chest-slot-" .. 1].value
+	end
 
 	chest_data.allow_copy_paste = true
 	chest_data.minable = {hardness = 0.2, mining_time = 0.2, result = (use_generic and "sc-chest-core") or name }
