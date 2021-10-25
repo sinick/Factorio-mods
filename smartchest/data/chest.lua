@@ -87,11 +87,7 @@ local function create_chest(index, tint, is_core)
 		}
 	}
 	chest_data.icon_mipmaps = 4
-	if settings.startup["sc-chest-slot-" .. index] then
-		chest_data.inventory_size = settings.startup["sc-chest-slot-" .. index].value
-	else
-		chest_data.inventory_size = settings.startup["sc-chest-slot-" .. 1].value
-	end
+	chest_data.inventory_size = settings.startup["sc-chest-slot-" .. index].value
 
 	chest_data.allow_copy_paste = true
 	chest_data.minable = {hardness = 0.2, mining_time = 0.2, result = (use_generic and "sc-chest-core") or name }
@@ -205,19 +201,19 @@ local tints = {
 	{ 0.50, 0.50, 0.50, 0.90},		-- grey - 11
 	{ 0.71, 0.33, 0.33, 0.90},		-- brown - 12
 	{ 0.75, 0.75, 0.75, 0.90},		-- silver - 13
-	{ 0.00, 0.50, 0.50, 0.90},		-- teal - 13
-	{ 0.00, 0.00, 0.50, 0.90},		-- navy - 14
-	{ 0.50, 0.50, 0.00, 0.90},		-- olive - 15
-	{ 0.13, 0.19, 0.25, 0.90},		-- ebony clay - 16
-	{ 0.51, 0.81, 0.88, 0.90},		-- spray - 17
-	{ 0.30, 0.07, 0.82, 0.90},		-- persian blue - 18
-	{ 0.57, 0.71, 0.59, 0.90},		-- summer green - 19
-	{ 0.21, 0.84, 0.72, 0.90},		-- turquoise - 20
-	{ 0.51, 0.76, 0.65, 0.90},		-- confetti - 21
-	{ 0.16, 0.87, 0.62, 0.90},		-- crusta - 22
-	{ 0.24, 1.00, 0.41, 0.90},		-- burnt orange - 23
-	{ 0.95, 0.51, 0.55, 0.90},		-- froly - 24
-	{ 0.46, 0.36, 0.41, 0.90}		-- falcon - 25
+	{ 0.00, 0.50, 0.50, 0.90},		-- teal - 14
+	{ 0.00, 0.00, 0.50, 0.90},		-- navy - 15
+	{ 0.50, 0.50, 0.00, 0.90},		-- olive - 16
+	{ 0.13, 0.19, 0.25, 0.90},		-- ebony clay - 17
+	{ 0.51, 0.81, 0.88, 0.90},		-- spray - 18
+	{ 0.30, 0.07, 0.82, 0.90},		-- persian blue - 19
+	{ 0.57, 0.71, 0.59, 0.90},		-- summer green - 20
+	{ 0.21, 0.84, 0.72, 0.90},		-- turquoise - 21
+	{ 0.51, 0.76, 0.65, 0.90},		-- confetti - 22
+	{ 0.16, 0.87, 0.62, 0.90},		-- crusta - 23
+	{ 0.24, 1.00, 0.41, 0.90},		-- burnt orange - 24
+	{ 0.95, 0.51, 0.55, 0.90},		-- froly - 25
+	{ 0.46, 0.36, 0.41, 0.90}		-- falcon - 26
 }
 
 local recipe_effects = {}

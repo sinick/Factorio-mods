@@ -1,6 +1,6 @@
 
 
-for i = 1, 25 do
+for i = 1, 26 do
 	data:extend({
 		{
 			type = "int-setting",
