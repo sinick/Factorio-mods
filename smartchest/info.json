@@ -1,0 +1,14 @@
+{
+  "name": "smartchest",
+  "version": "0.0.14",
+  "title": "Smart chest",
+  "author": "Telkine2018",
+  "contact": "",
+  "homepage": "",
+  "description": "A new way to transport items and to build bases",
+  "factorio_version": "1.1",
+  "dependencies": [
+		"base >= 1.1",
+		"! space-exploration"
+	]
+}
