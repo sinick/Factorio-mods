@@ -188,7 +188,7 @@ local function create_chest(index, tint, is_core)
 end
 
 local tints = {
-	{ 1.00, 0.00, 0.00, 0.00, 		-- red - 1
+	{ 1.00, 0.00, 0.00, 0.00}, 		-- red - 1
 	{ 1.00, 0.50, 0.00, 0.90},		-- orange - 2 
 	{ 1.00, 1.00, 0.00, 0.90},		-- yellow - 3
 	{ 1.00, 0.00, 1.00, 0.90}, 		-- fushia - 4
@@ -213,7 +213,7 @@ local tints = {
 	{ 0.16, 0.87, 0.62, 0.90},		-- crusta - 22
 	{ 0.24, 1.00, 0.41, 0.90},		-- burnt orange - 23
 	{ 0.95, 0.51, 0.55, 0.90},		-- froly - 24
-	{ 0.46, 0.36, 0.41, 0.90},		-- falcon - 25
+	{ 0.46, 0.36, 0.41, 0.90}		-- falcon - 25
 }
 
 local recipe_effects = {}
