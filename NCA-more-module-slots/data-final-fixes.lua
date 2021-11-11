@@ -112,7 +112,7 @@ function generate_group(subgroupname, counter, element_list)
             type = "item-subgroup",
             name = subgroupname,
             group = "a-modules",
-            order = "f-" .. (counter+8),
+            order = "f-9-" .. counter,
           }
         })
     for _,i in pairs(element_list) do
@@ -130,5 +130,6 @@ if mods["Advanced_Modules"] then
         counter = generate_group("a-gray", counter, {"gray-module-1", "gray-module-2", "gray-module-3", "gray-module-4"})
         counter = generate_group("a-red", counter, {"red-module-1", "red-module-2", "red-module-3", "red-module-4"})
         counter = generate_group("a-cyan", counter, {"cyan-module-1", "cyan-module-2", "cyan-module-3", "cyan-module-4"})
+        counter = generate_group("a-blue", counter, {"blue-module-1", "blue-module-2", "blue-module-3", "blue-module-4"})
     end
 end
