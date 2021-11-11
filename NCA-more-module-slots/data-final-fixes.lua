@@ -106,7 +106,7 @@ end
 
 
 -- Change category of module if item group exist
-function generate_group(subgroupname, counter, subname, element_list)
+function generate_group(subgroupname, counter, element_list)
     data:extend ({
           {
             type = "item-subgroup",
@@ -115,8 +115,10 @@ function generate_group(subgroupname, counter, subname, element_list)
             order = "f-" .. (counter+8),
           }
         })
-    for _,i in element_list do
-        data.raw.module[subname .. i].subgroup = subgroupname
+    for _,i in pairs(element_list) do
+        if data.raw.module[i] then
+            data.raw.module[i].subgroup = subgroupname
+        end
     end
     return counter + 1
 end
@@ -124,8 +126,9 @@ end
 if mods["Advanced_Modules"] then
     counter = 1;
     if mods["BlackModule"] then
-        counter = generate_group("a-black", counter, "black-module-", {1,2,3,4})
-        counter = generate_group("a-gray", counter, "gray-module-", {1,2,3,4})
-        counter = generate_group("a-red", counter, "red-module-", {1,2,3,4})
+        counter = generate_group("a-black", counter, {"black-module-1", "black-module-2", "black-module-3", "black-module-4"})
+        counter = generate_group("a-gray", counter, {"gray-module-1", "gray-module-2", "gray-module-3", "gray-module-4"})
+        counter = generate_group("a-red", counter, {"red-module-1", "red-module-2", "red-module-3", "red-module-4"})
+        counter = generate_group("a-cyan", counter, {"cyan-module-1", "cyan-module-2", "cyan-module-3", "cyan-module-4"})
     end
 end
