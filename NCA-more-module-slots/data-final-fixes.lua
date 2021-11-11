@@ -121,15 +121,11 @@ function generate_group(subgroupname, counter, subname, element_list)
     return counter + 1
 end
 
-if data.raw["a-modules"] then
+if mods["Advanced_Modules"] then
     counter = 1;
-    if data.raw["module"]["black-module-1"] then
+    if mods["BlackModule"] then
         counter = generate_group("a-black", counter, "black-module-", {1,2,3,4})
-    end
-    if data.raw["module"]["gray-module-1"] then
         counter = generate_group("a-gray", counter, "gray-module-", {1,2,3,4})
-    end
-    if data.raw["module"]["red-module-1"] then
         counter = generate_group("a-red", counter, "red-module-", {1,2,3,4})
     end
 end
