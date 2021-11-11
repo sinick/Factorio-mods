@@ -115,7 +115,7 @@ function generate_group(subgroupname, counter, subname, element_list)
             order = "f-" .. (counter+8),
           }
         })
-    for i in element_list do
+    for _,i in element_list do
         data.raw.module[subname .. i].subgroup = subgroupname
     end
     return counter + 1
