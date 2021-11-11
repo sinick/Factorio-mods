@@ -102,3 +102,34 @@ if not production_limit then
         end
     end
 end
+
+
+
+-- Change category of module if item group exist
+function generate_group(subgroupname, counter, subname, element_list)
+    data:extend ({
+          {
+            type = "item-subgroup",
+            name = subgroupname,
+            group = "a-modules",
+            order = "f-" .. (counter+8),
+          }
+        })
+    for i in element_list do
+        data.raw.module[subname .. i].subgroup = subgroupname
+    end
+    return counter + 1
+end
+
+if data.raw["a-modules"] then
+    counter = 1;
+    if data.raw.["module"]["black-module-1"] then
+        counter = generate_group("a-black", counter, "black-module-", [1,2,3,4])
+    end
+    if data.raw.["module"]["gray-module-1"] then
+        counter = generate_group("a-gray", counter, "gray-module-", [1,2,3,4])
+    end
+    if data.raw.["module"]["red-module-1"] then
+        counter = generate_group("a-red", counter, "red-module-", [1,2,3,4])
+    end
+end
