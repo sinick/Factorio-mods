@@ -8,11 +8,11 @@ if settings.startup["bm-limit"].value == false then
 end 
 
 if mods["IndustrialRevolution"] then
-	data.raw.module["black-module-1"].ingredients = {{"copper-gear-wheel", 5},{"wood", 5}}
-	data.raw.module["gray-module-1"].ingredients = {{"copper-gear-wheel", 5},{"wood", 5}}
-	data.raw.module["red-module-1"].ingredients = {{"copper-gear-wheel", 5},{"wood", 5}}
-	data.raw.module["blue-module-1"].ingredients = {{"copper-gear-wheel", 5},{"wood", 5}}
-	data.raw.module["cyan-module-1"].ingredients = {{"copper-gear-wheel", 5},{"wood", 5}}
+	data.raw.recipe["black-module-1"].ingredients = {{"copper-gear-wheel", 5},{"wood", 5}}
+	data.raw.recipe["gray-module-1"].ingredients = {{"copper-gear-wheel", 5},{"wood", 5}}
+	data.raw.recipe["red-module-1"].ingredients = {{"copper-gear-wheel", 5},{"wood", 5}}
+	data.raw.recipe["blue-module-1"].ingredients = {{"copper-gear-wheel", 5},{"wood", 5}}
+	data.raw.recipe["cyan-module-1"].ingredients = {{"copper-gear-wheel", 5},{"wood", 5}}
 end
 --[[
 for k, v in pairs(data.raw.module) do
