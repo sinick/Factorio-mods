@@ -6,7 +6,7 @@ if stack_multiplier ~= 1 ~= 1 then
 	for _,dat in pairs(data.raw) do
 		for _,item in pairs(dat) do
 			local is_stackable = false
-			if item.stack_size then
+			if item.stack_size and (type(item.stack_size) == "number") then
 				if item.stack_size == 1 then
 					if item.type == "ammo" then
 						is_stackable = true
